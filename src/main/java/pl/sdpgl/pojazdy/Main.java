@@ -1,13 +1,14 @@
 package pl.sdpgl.pojazdy;
 
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Main {
 
 
-    public static final Logger logger = LogManager.getLogger(Main.class);
+    static final Logger LOGGER =
+            LoggerFactory.getLogger(Main.class);
+
 
     public static void main(String[] args) {
 

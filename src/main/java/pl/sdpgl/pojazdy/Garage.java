@@ -5,6 +5,9 @@ import pl.sdpgl.pojazdy.Vehicles.*;
 
 import java.util.Map;
 
+import static pl.sdpgl.pojazdy.Main.LOGGER;
+
+
 @Getter
 public class Garage {
 
@@ -43,7 +46,7 @@ public class Garage {
 
         }
 
-        Main.logger.info(nameOfFastestCar);
+        LOGGER.info(nameOfFastestCar);
         return fastestCar;
 
     }
@@ -71,7 +74,7 @@ public class Garage {
 
         }
 
-        Main.logger.info(nameOfFastestPlane);
+        LOGGER.info(nameOfFastestPlane);
         return fastestPlane;
 
     }
@@ -99,7 +102,7 @@ public class Garage {
         }
 
 
-        Main.logger.info(nameOfFastestBicycle);
+        LOGGER.info(nameOfFastestBicycle);
         return fastestBicycle;
 
     }
@@ -128,13 +131,14 @@ public class Garage {
         }
 
 
-        Main.logger.info(nameOfFastestShip);
+        LOGGER.info(nameOfFastestShip);
         return fastestShip;
 
     }
 
 
     public Vehicle findFastestVehicle(){
+
 
         Vehicle fastestVehicle = new Vehicle(0,"Test");
         String nameOfFastestVehicle = "test";
@@ -156,7 +160,7 @@ public class Garage {
 
         }
 
-        Main.logger.info(nameOfFastestVehicle);
+        LOGGER.info(nameOfFastestVehicle);
         return fastestVehicle;
 
     }
